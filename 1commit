@@ -1,0 +1,8 @@
+def mostrar_menu ():
+    print ("--- sistema de Estoque de um restaurante ---\n")
+    print("1 - adicionar item")
+    print("2 - lista de estoque ")
+    print("3 - quantidade de itens")
+    print ("4 - sair")
+    
+mostrar_menu()

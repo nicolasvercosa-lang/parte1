@@ -6,3 +6,29 @@ def mostrar_menu ():
     print ("4 - sair")
     
 mostrar_menu()
+# --------------------------------------------------
+estoque = {}
+
+def adicionar_item():
+    nome = input("Nome do item: ")
+    quantidade = int(input("Quantidade: "))
+    estoque[nome] = quantidade
+    print(f"{nome} adicionado com {quantidade} unidades.")
+
+def lista_de_estoque():
+    print("\n--- Estoque Atual ---")
+    if not estoque:
+        print("Estoque vazio.")
+    else:
+        for item, quantidade in estoque.items():
+            print(f"{item}: {quantidade} unidades")
+
+def quantidade_de_itens():
+    nome = input("Nome do item: ")
+    if nome in estoque:
+        nova_quantidade = int(input("Digite a nova quantidade: "))
+        estoque[nome] = nova_quantidade
+        print(f"Quantidade de {nome} atualizada para {nova_quantidade}.")
+    else:
+        print("Item não encontrado!")
+# --------------------------------------------------

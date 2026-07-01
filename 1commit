@@ -32,3 +32,21 @@ def quantidade_de_itens():
     else:
         print("Item não encontrado!")
 # --------------------------------------------------
+def main():
+    while True:
+        mostrar_menu()
+        opcao = input("Escolha uma das opções: ")
+
+        if opcao == "1":
+            adicionar_item()
+        elif opcao == "2":
+            lista_de_estoque()
+        elif opcao == "3":
+            quantidade_de_itens()
+        elif opcao == "4":
+            print("Encerrando...")
+            break
+        else:
+            print("Opção inválida!")
+
+main()
